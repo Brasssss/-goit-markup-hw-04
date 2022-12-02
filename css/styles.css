@@ -15,6 +15,14 @@
 цвет ссылок в адресе #rgba(255, 255, 255, .4)
 */ 
 
+html{
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
 :root{
     --background-color-black : #2F303A;
     --background-color-white : #F5F5F5;
