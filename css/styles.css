@@ -85,7 +85,7 @@ img {
 
 .body{
     width: 1600px;
-    margin: 0;
+    margin: 50px auto;
     font-family: 'Roboto', sans-serif;
     color: var(--text-color-black);
     background-color: var(--background-color-white);
@@ -187,6 +187,7 @@ a{
     letter-spacing: 0.02em;
 }
 .mail-icon-header::before{
+    display: block;
     content:"";
     width: 16px;
     height: 12px;
@@ -219,14 +220,14 @@ a{
 .hero{
    
     padding: 200px 0;
-    background-image:url(../images/hero-background-img.jpg);
+
+    background-image:linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),
+    url(../images/hero-background-img.jpg);
     max-width: 1600px;
     max-height: 600px;
     background-position: center;
     background-repeat: no-repeat;
     
-    
-
     background-color: var(--background-color-black);
     
 
@@ -362,6 +363,8 @@ margin-right: 30px;
 }
 .team-list-item{
     display: block;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 
     background-color: var(--background-color-full-white);    
 }
@@ -475,15 +478,19 @@ margin-right: 30px;
     width: 370px;
     margin: 15px;
     background-color: var(--background-color-full-white);
-    
-
-    background-color: var(--background-color-full-white);
 }
+
+.portfolio-project-item:hover,
+.portfolio-project-item:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .border-div{
     border-left: 1px solid #ECECEC;
     border-right: 1px solid #ECECEC;
     border-bottom: 1px solid #ECECEC;
 }
+
 .portfolio-project-list-title{
     padding-top: 20px;
     padding-bottom: 4px;
