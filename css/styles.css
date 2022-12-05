@@ -84,6 +84,8 @@ img {
 
 
 .body{
+    width: 1600px;
+    margin: 0;
     font-family: 'Roboto', sans-serif;
     color: var(--text-color-black);
     background-color: var(--background-color-white);
@@ -174,7 +176,8 @@ a{
 
 
 .nav-contacts-link{
-    display: block;
+    display: flex;
+    align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
 
@@ -183,7 +186,25 @@ a{
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
+.mail-icon-header::before{
+    content:"";
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    background-image: url(../images/mail-icon-header.png);
+    background-size: contain;
 
+}
+
+.smartphone-icon-header::before {
+    content: "";
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    background-image: url(../images/smartphone-icon-header.png);
+    background-size: contain;
+
+}
 
 .nav-contacts-item:not(:last-child){
     margin-right: 50px;
@@ -196,8 +217,16 @@ a{
 
 /* -----------------------герой/hero--------------------- */
 .hero{
-
+   
     padding: 200px 0;
+    background-image:url(../images/hero-background-img.jpg);
+    max-width: 1600px;
+    max-height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    
+
     background-color: var(--background-color-black);
     
 
@@ -261,21 +290,46 @@ a{
 .services-list{
     display: flex;
 }
+
 .features-list:not(:last-child){
     margin-right: 30px;
 }
+/* .features-list::before{
+    display: block;
+    content: "";
+    background-position: center;
+    background-size: 70px;
+    background-repeat: no-repeat;
+}
+.features-list:nth-child(1)::before {
+    background-image: url(../images/features-list-antena.png);
+}
+
+.features-list:nth-child(2) {
+    background-image: url(../images/features-list-clock.png);
+} 
+
+.features-list:nth-child(3) {
+    background-image: url(../images/features-list-diagram.png);
+}
+
+.features-list:nth-child(4) {
+    background-image: url(../images/features-list-austronavt.png);
+} */
+
 
 .item{
     display: block;
-
-   
 }
+
 .features-title{
+    margin-bottom: 10px;
     color: var(--text-color-black);
     text-transform: uppercase;
     font-weight: 700;
     line-height: 1.14;
     font-size: 14px;
+   
 }
 .features-text{
     color: var(--text-color-grey);
