@@ -24,6 +24,7 @@ html{
     box-sizing: inherit;
 }
 :root{
+    --cliets-logo : #AFB1B8;
     --background-color-black : #2F303A;
     --background-color-white : #F5F5F5;
     --background-color-dark-white : #F5F4FA;
@@ -186,7 +187,21 @@ a{
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
-.mail-icon-header::before{
+
+.nav-contacts-link:hover,
+.nav-contacts-link:hover .header-icons{
+    color: var(--accent-color-blue);
+    fill: var(--accent-color-blue);
+}
+
+.header-icons{
+    margin-right: 10px;
+    fill: var(--text-color-grey);
+    
+}
+
+
+/* .mail-icon-header::before{
     display: block;
     content:"";
     width: 16px;
@@ -195,9 +210,9 @@ a{
     background-image: url(../images/mail-icon-header.png);
     background-size: contain;
 
-}
+} */
 
-.smartphone-icon-header::before {
+/* .smartphone-icon-header::before {
     content: "";
     width: 10px;
     height: 16px;
@@ -205,7 +220,7 @@ a{
     background-image: url(../images/smartphone-icon-header.png);
     background-size: contain;
 
-}
+} */
 
 .nav-contacts-item:not(:last-child){
     margin-right: 50px;
@@ -283,45 +298,38 @@ a{
  padding-top: 94px;
 }
 .services,
-.team{
+.team,
+.clients{
     padding-top: 94px;
     padding-bottom: 94px;
 }
+
 .features-list,
-.services-list{
+.services-list {
     display: flex;
 }
 
-.features-list:not(:last-child){
+.features-list-item{
+    display: flex;
+    flex-direction: column;
+    max-width: 270px;
+}
+
+.features-list-item:not(:last-child){
     margin-right: 30px;
 }
-/* .features-list::before{
-    display: block;
-    content: "";
-    background-position: center;
-    background-size: 70px;
-    background-repeat: no-repeat;
-}
-.features-list:nth-child(1)::before {
-    background-image: url(../images/features-list-antena.png);
-}
 
-.features-list:nth-child(2) {
-    background-image: url(../images/features-list-clock.png);
-} 
+.features-div-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    background-color: var(--background-color-dark-white);
 
-.features-list:nth-child(3) {
-    background-image: url(../images/features-list-diagram.png);
 }
 
-.features-list:nth-child(4) {
-    background-image: url(../images/features-list-austronavt.png);
-} */
-
-
-.item{
-    display: block;
-}
 
 .features-title{
     margin-bottom: 10px;
@@ -330,8 +338,9 @@ a{
     font-weight: 700;
     line-height: 1.14;
     font-size: 14px;
-   
 }
+
+
 .features-text{
     color: var(--text-color-grey);
     line-height: 1.71;
@@ -390,6 +399,75 @@ margin-right: 30px;
     text-align: center;
     
 }
+.social-list,
+.social-item,
+.social-link,
+.social-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.social-item{
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+.social-item:not(:last-child){
+    margin-right: 10px;
+}
+.social-link{
+    fill: var(--cliets-logo);
+}
+
+
+.social-item:hover,
+.social-item:hover .social-link {
+    background-color: var(--accent-color-blue);
+    fill: var(--background-color-full-white);
+}
+
+
+
+
+
+/* ------------Clients-------------- */
+
+.clients{
+    background-color: var(--background-color-white);
+}
+.clients-list,
+.clients-list-item,
+.clients-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.clients-list{
+    gap: 30px;
+}
+
+.clients-link{
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--cliets-logo);
+    border-radius: 4px;
+}
+
+
+.clients-icons{
+    fill: var(--cliets-logo);
+}
+.clients-link:hover,
+.clients-link:hover .clients-icons{
+    border-color: var(--accent-color-blue);
+    fill: var(--accent-color-blue);
+}
+
+
+
 
 /* --------------------підвал/footer------------------------ */
 .footer{
