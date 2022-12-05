@@ -430,8 +430,6 @@ margin-right: 30px;
 
 
 
-
-
 /* ------------Clients-------------- */
 
 .clients{
@@ -477,8 +475,12 @@ margin-right: 30px;
     background-color: var(--background-color-black);
 
 }
+.footter-first-part{
+    
+}
 .footer-logo{
     display: block;
+    margin-top: 60px;
     margin-bottom: 20px;
 
     color: var(--text-color-white);
@@ -503,6 +505,68 @@ margin-right: 30px;
 .address-contact:focus{
     color: var(--accent-color-blue);
 }
+
+
+.flex{
+    display: flex;
+}
+
+.footer-second-part {
+    width: 206px;
+    height: 80px;
+    margin-left: 70px;
+    margin-top: 72px;
+    margin-bottom: 100px;
+
+}
+.join{
+    margin-bottom: 20px;
+
+    color: var(--text-color-white);
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1.14;
+    font-size: 14px;
+
+
+}
+.footer-social-list{
+    display: flex;
+    gap: 10px;
+
+
+
+}
+.footer-social-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+    background: linear-gradient(rgba(255,255,255,0.1),rgba(255, 255, 255, 0.1) );
+    
+}
+.footer-social-item:hover,
+.footer-social-item:focus{
+    background-color: var(--accent-color-blue);
+}
+
+.footer-social-link{
+    border-radius: 50%;
+    fill: var(--background-color-full-white);
+}
+
+
+
+
+
+
+
+
+
+
 
 /* --------------------------portfolio -------------------------*/
 
